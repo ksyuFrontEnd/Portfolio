@@ -68,11 +68,14 @@
 
                         <div class="section_contact__row-mail">
                             <p>or just write an email to me:</p>
-                            <form class="email_contact-email">
-                                <input type="email" name="email" placeholder="Your email" autocomplete="off">
-                                <textarea name="message" id="" placeholder="How can I help you?"></textarea>
-                                <button type="submit">Submit</button>
-                            </form>
+                            <form action="https://formsubmit.co/ksyubaranik@gmail.com" method="POST" class="email_contact-email">
+                                    <input type="hidden" name="_subject" value="New email! Woooo!">
+                                    <input type="text" name="name" placeholder="Your name" autocomplete="off" required>
+                                    <input type="email" name="email" placeholder="Your email" autocomplete="off" required>
+                                    <textarea name="message" id="" placeholder="How can I help you?" required></textarea>
+                                    <input type="hidden" name="_next" value="https://https://ksyufrontend.github.io/Portfolio//thanks.html">
+                                    <button type="submit">Submit</button>
+                                </form>
                         </div>
 
                         <div class="section_contact__row-message">
