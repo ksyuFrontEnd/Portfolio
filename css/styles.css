@@ -562,6 +562,7 @@ border: none;
 }
 
 /* Section-3 ------------------------------------------------------------ */
+
 .section-3 {
   min-height: 500px;
   background-color: #d96248;
@@ -585,7 +586,7 @@ border: none;
 .section-3__row-sites, .section-3__row-technologies, .section-3__row-picture {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
 }
 
 .section-3__row-sites p, .section-3__row-technologies p {
