@@ -25,11 +25,24 @@
                             <img src="images/grey_instagram_icon.png" alt="Instagram icon">
                         </a> 
                     </div>
-                    <div class="header__menu-grey">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About me</a>
-                        <a href="contact.html">Contact</a>
-                    </div>
+                    <nav class="header__menu-grey menu">
+                        <div class="menu__body">
+                            <ul class="menu-list">
+                                <li class="menu__item">
+                                    <a href="index.html" class="menu__link">Home</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="about.html" class="menu__link">About me</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="contact.html" class="menu__link">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <button class="icon-menu-dark" type="button">
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </header>
@@ -39,7 +52,7 @@
                     <div class="section_contact__row">
 
                         <div class="section_contact__row-info">
-                            <p>If you want to have a web application,<br> do not hesitate to contact me</p>
+                            <p>If you want to have a web application,<br> do not hesitate to contact me.</p>
                         </div>
                         <div class="section_contact__row-media">
                             <p>You can find me in social media:</p>
@@ -83,24 +96,30 @@
                                 </div>
                             </div>           
                         </div>
+
                         <div class="section_contact__row-mail">
-                            <p>or just write an email to me:</p>
-                            <form action="https://formsubmit.co/ksyubaranik@gmail.com" method="POST" class="email_contact-email">
-                                <input type="hidden" name="_subject" value="New email! Woooo!">
-                                <input type="text" name="name" placeholder="Your name" autocomplete="off" required>
-                                <input type="email" name="email" placeholder="Your email" autocomplete="off" required>
-                                <textarea name="message" id="" placeholder="How can I help you?" required></textarea>
-                                <input type="hidden" name="_next" value="https://ksyufrontend.github.io/Portfolio/index.html">
-                                <button type="submit">Submit</button>
-                           </form>
+                            <div class="email_contact-title">
+                                <p>or just write an email to me:</p>
+                            </div>
+                            <div class="email_contact-form">
+                                <form action="https://formsubmit.co/ksyubaranik@gmail.com" method="POST" class="email_contact-email">
+                                    <input type="hidden" name="_subject" value="New email! Woooo!">
+                                    <input type="text" name="name" placeholder="Your name" autocomplete="off" required>
+                                    <input type="email" name="email" placeholder="Your email" autocomplete="off" required>
+                                    <textarea name="message" id="" placeholder="How can I help you?" required></textarea>
+                                    <input type="hidden" name="_next" value="https://ksyufrontend.github.io/Portfolio/index.html">
+                                    <button type="submit" class="submit_button" >Submit</button>
+                                </form>
+                            </div>
                         </div>
 
-                        <div class="section_contact__row-message">
+                        <!-- <div class="section_contact__row-message">
                             <p>You can also send a short message here</p>
                             <a href="" target="_blank">
                                 <img src="images/messenger_icon.png" alt=""> 
                             </a>
-                        </div>
+                        </div> -->
+                        
                     </div>
                 </div>
             </div>
